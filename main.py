@@ -5,16 +5,16 @@
 # Date:
 
 print("--- Student Records Manager ---")
+
 students_records = {
-    "251P005" : {"name":"Sameer","grade":"A","attendance": 68},
-    "251P055" : {"name":"Abdulla","grade":"B+","attendance": 88},
-    "251P026" : {"name":"Katrina","grade":"A-","attendance": 55},
+    "251P005": {"name": "Sameer", "grade": "A", "attendance": 68},
+    "251P055": {"name": "Abdulla", "grade": "B+", "attendance": 88},
+    "251P026": {"name": "Katrina", "grade": "A-", "attendance": 55},
 }
 
-print(f"Current Student Records: {students_records}")
+print("Current Student Records:", students_records)
 
-# Write your code here
-# TODO: Add a new Student Record 
+# Add a new Student Record
 uin = input("Enter New Student UIN: ")
 name = input("Enter New Student Name: ")
 grade = input("Enter New Student Grade: ")
@@ -26,15 +26,16 @@ students_records[uin] = {
     "attendance": attendance
 }
 
-# TODO: Update the Grade of Student of UIN 251P055
+# Update the Grade of Student
 update_uin = input("Enter UIN to Update: ")
 new_grade = input("Enter New Grade of Student: ")
 students_records[update_uin]["grade"] = new_grade
 
-# TODO: Remove Student with UIN 251P026
+# Remove Student with given UIN
 delete_uin = input("Enter UIN of the Student to Delete: ")
 students_records.pop(delete_uin)
 
-# Stop coding here
-print(f"Final Student Records: {students_records}")
+print("Final Student Records:", students_records)
+
+
 
